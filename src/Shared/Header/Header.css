@@ -1,0 +1,36 @@
+.nav-style{
+    padding: 0 10px;
+}
+
+.header ul li a{
+    opacity: 0.6;
+}
+.header ul li a.active{
+    background:none !important;
+    opacity: 1;
+}
+.header ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3%;
+    background: linear-gradient(90deg, #0000, #fff, #0000);
+    transition: 0.5s;
+}
+.header ul li a:hover::after{
+    width: 60%;
+}
+.header a.active::after{
+    width: 60%;  
+}
+.header a:focus{
+    background:none;
+    color: #F472B6;
+}
+.header ul li a:hover{
+    background: none;
+    opacity: 1;
+}

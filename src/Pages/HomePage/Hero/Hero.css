@@ -1,0 +1,17 @@
+.heroSection{
+    background: linear-gradient(#7551FA , #110932);
+    height: auto;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.heroSection::after{
+    content: '';
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(transparent,#180955, #1E1E1E);
+    z-index: -1;
+}
