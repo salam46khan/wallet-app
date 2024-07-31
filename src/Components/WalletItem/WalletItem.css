@@ -1,0 +1,16 @@
+.wallet-item{
+    border: 1px solid #fff5;
+    z-index: 1;
+    position: relative;
+}
+.wallet-item::after{
+    content: '';
+    height: 105%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background: linear-gradient(90deg, #020106 90%, transparent);
+    z-index: -1;
+    transform: translateY( -50%) translateX(-5px);
+}

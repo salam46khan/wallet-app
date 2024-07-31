@@ -1,0 +1,22 @@
+.blockLayer {
+    width: 100%;
+    background: linear-gradient(#fff2, transparent);
+    position: relative;
+    border-radius: 30px;
+}
+
+
+.layerOver{
+    position: absolute;
+    height: 100%;
+    width: 104%;
+    bottom: 5;
+    left: 50%;
+    background: linear-gradient(transparent, #020106 70%);
+    transform: translateX(-50%);
+    
+}
+.blockLayerContent{
+    z-index: 20;
+    position: relative;
+}

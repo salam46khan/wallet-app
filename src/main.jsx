@@ -6,7 +6,7 @@ import Router from './Router/Router.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className='bg-[#1E1E1E] text-white font-NormalFont'>
+    <div className=' bg-[#020106] text-white font-NormalFont'>
       <RouterProvider router={Router}></RouterProvider>
     </div>
   </React.StrictMode>,

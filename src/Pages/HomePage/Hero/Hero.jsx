@@ -1,8 +1,9 @@
 import { FaChrome } from 'react-icons/fa';
 import './Hero.css'
+import MarqueeItem from '../../../Components/MarqueeItem/MarqueeItem';
 const Hero = () => {
     return (
-        <div className="heroSection">
+        <div className="heroSection relative">
             <div className="bg-line-effect"></div>
             <div className='container h-full flex justify-center items-center z-10 p-3'>
                 <div className=' w-full max-w-[820px] text-center'>
@@ -20,8 +21,8 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="animate-content">
-
+            <div className="animate-content absolute bottom-6 border-y-2 border-[#fff5] left-0 w-full -rotate-3">
+                <MarqueeItem></MarqueeItem>
             </div>
         </div>
     );

@@ -59,7 +59,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className='py-[15px] md:px-[50px] px-[15px] border rounded-full border-[#fff5]'>
+                    <button className='py-[15px] md:px-[50px] px-[15px] border rounded-full border-[#fff5] font-semibold hover:bg-primaryColor duration-300 text-slate-300'>
                         <span className='hidden md:block'>Download</span>
                         <FaDownload className='block md:hidden' />
                     </button>
