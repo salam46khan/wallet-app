@@ -1,10 +1,11 @@
-.footerItem{
+.footerItem {
     border: 1px solid #fff7;
-    border-bottom:  none;
+    border-bottom: none;
     position: relative;
     z-index: 2;
 }
-.footerItem::after{
+
+.footerItem::after {
     content: '';
     height: 40%;
     width: 101%;
@@ -13,5 +14,18 @@
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(transparent, #6346CB 70%);
-    z-index:-1;
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 480px) {
+    .footerItem { 
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .footerItem::after {
+        background: none;
+    }
 }

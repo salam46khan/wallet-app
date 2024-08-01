@@ -12,8 +12,8 @@ const Wallet = () => {
         <div className="relative">
             <div className="bg-blur h-14 w-20 -bottom-16 left-0 "></div>
             <div className="container py-16">
-                <div className="w-full max-w-3xl mx-auto">
-                    <h2 className="text-center font-bold text-[50px]">
+                <div className="w-full max-w-3xl mx-auto px-4">
+                    <h2 className="text-center font-bold text-2xl md:text-5xl">
                         Start on Solid Ground With Our Online Crypto Wallet
                     </h2>
                 </div>

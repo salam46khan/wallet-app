@@ -5,7 +5,7 @@ import './BlogItem.css'
 const BlogItem = () => {
     return (
         <div className="flex flex-col md:flex-row gap-3 md:gap-0">
-            <div className="p-10 blogItem w-full md:w-1/3">
+            <div className="md:p-10 py-12 px-5 blogItem w-full md:w-1/3">
                 <p className="text-primaryColor font-semibold">01 NEW</p>
                 <h5 className="text-[20px] w-full max-w-[300px] py-5 font-bold">
                     Recap Of NOBS With Juli Chapter 2
@@ -18,7 +18,7 @@ const BlogItem = () => {
                     <IoMdArrowRoundForward className='-rotate-45' />
                 </Link>
             </div>
-            <div className="p-10 blogItem  w-full md:w-1/3">
+            <div className="md:p-10 py-12 px-5 blogItem  w-full md:w-1/3">
                 <p className="text-primaryColor font-semibold">02 NEW</p>
                 <h5 className="text-[20px] font-bold py-5">
                     Recap Of NOBS With Juli Chapter 2
@@ -31,7 +31,7 @@ const BlogItem = () => {
                     <IoMdArrowRoundForward className='-rotate-45' />
                 </Link>
             </div>
-            <div className="p-10 blogItem w-full md:w-1/3">
+            <div className="md:p-10 py-12 px-5 blogItem w-full md:w-1/3">
                 <p className="text-primaryColor font-semibold">03 NEW</p>
                 <h5 className="text-[20px] font-bold py-5">
                     Recap Of NOBS With Juli Chapter 2

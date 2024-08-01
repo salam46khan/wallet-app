@@ -1,57 +1,28 @@
+import { useState } from "react";
+import { FaMinus } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
 
-const FAQItem = () => {
+const FAQItem = ({ title, text }) => {
+    const [accordionOpen, setAccordionOpen] = useState(false);
     return (
         <div>
-            <div className="collapse border border-[#fff5] bg-[#fff1]">
-                <input type="radio" name="my-accordion-3" />
-                <div className="collapse-title text-xl p-8 font-medium flex justify-between items-center">
-                    <p className="text-[25px]">What is Wallet?</p>
-                    <FaPlus className="text-3xl" />
-                </div>
-                <div className="collapse-content bg-[#fff1]">
-                    <p className="p-5 text-[#fff7]">
-                        Wallet does not collect or track personal data, not even your public address. Your personal data stays with you, where it belongs. Wallet lets you easily manage token allowances to reduce the risk of losing funds to DApp hacks and exploits.
-                    </p>
-                </div>
-            </div>
-            <div className="collapse border border-[#fff5] bg-[#fff1]">
-                <input type="radio" name="my-accordion-3" />
-                <div className="collapse-title text-xl p-8 font-medium flex justify-between items-center">
-                    <p className="text-[25px]">What is a non custodial wallet?</p>
-                    <FaPlus className="text-3xl" />
-                </div>
-                <div className="collapse-content bg-[#fff1]">
-                    <p className="p-5 text-[#fff7]">
-                        Node providers receive your IP and other personal data. Wallet protects your identity by intercepting requests, removing sensitive details, and relaying only necessary data for transactions.
-                    </p>
-                </div>
-            </div>
-            <div className="collapse border border-[#fff5] bg-[#fff1]">
-                <input type="radio" name="my-accordion-3" />
-                <div className="collapse-title text-xl  p-8 font-medium flex justify-between items-center">
-                    <p className="text-[25px]">Why Self-Custody In Crypto Wallets Are Important?</p>
-                    <FaPlus className="text-3xl" />
-                </div>
-                <div className="collapse-content bg-[#fff1]">
-                    <p className="p-5 text-[#fff7]">
-                        Node providers receive your IP and other personal data. Wallet protects your identity by intercepting requests, removing sensitive details, and relaying only necessary data for transactions.
-                    </p>
-                </div>
-            </div>
-            <div className="collapse border border-[#fff5] bg-[#fff1]">
-                <input type="radio" name="my-accordion-3" />
-                <div className="collapse-title  p-8 font-medium flex justify-between items-center">
-                    <p className="text-[25px]">Is Wallet Self custodial wallet?</p>
-                    <FaPlus className="text-3xl" />
-                </div>
-                <div className="collapse-content bg-[#fff1]">
-                    <p className="p-5 text-[#fff7]">
-                        Wallet does not collect or track personal data, not even your public address. Your personal data stays with you, where it belongs. Wallet lets you easily manage token allowances to reduce the risk of losing funds to DApp hacks and exploits.
-                    </p>
-                </div>
-            </div>
 
+            <div className=" border-b border-[#fff4] bg-[#fff1]">
+
+                <button onClick={() => setAccordionOpen(!accordionOpen)} className="w-full flex justify-between items-center p-3 md:p-6 md:px-10">
+                    <p className="text-xl md:text-[25px] text-start">{title}</p>
+
+                    <div>
+                        {
+                            accordionOpen ? <FaMinus className="text-3xl" /> : <FaPlus className="text-3xl" />
+                        }
+                    </div>
+
+                </button>
+                <div className={`grid overflow-hidden bg-[#fff1] transition-all duration-200 ease-in-out ${accordionOpen ? 'grid-rows-[1fr] p-3 md:p-5 opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+                    <p className="overflow-hidden md:px-5">{text}</p>
+                </div>
+            </div>
         </div>
     );
 };

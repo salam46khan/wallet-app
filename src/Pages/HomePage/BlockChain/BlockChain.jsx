@@ -7,8 +7,8 @@ const BlockChain = () => {
         <div className="relative">
             <div className="bg-blur h-24 w-[85%] top-[30%] left-1/2 -translate-x-[50%]"></div>
             <div className="container py-16">
-                <div className="text-center">
-                    <h2 className="text-[50px] font-bold">Get The Best Of Your Favoirite Blockchains</h2>
+                <div className="text-center px-4">
+                    <h2 className="md:text-5xl text-2xl font-bold">Get The Best Of Your Favoirite Blockchains</h2>
                 </div>
                 <div className="mt-10">
                     <Tabs>
