@@ -1,19 +1,19 @@
 [
     {
         "id":1,
-        "pic": "../src/assets/icon/w-1.png",
+        "pic": "https://i.ibb.co/3mn9bWs/w-1.png",
         "title": "High Performance",
         "text": "Public nodes are clogged and sluggish. Wallet nodes are exclusive, fast and carefully maintained for optimal performance and speed, only available to Wallet users."
     },
     {
         "id":2,
-        "pic": "../src/assets/icon/w-2.png",
+        "pic": "https://i.ibb.co/pzTkrQy/w-2.png",
         "title": "Identity Protection",
         "text": "Node providers receive your IP and other personal data. Wallet protects your identity by intercepting requests, removing sensitive details, and relaying only necessary data for transactions."
     },
     {
         "id":3,
-        "pic": "../src/assets/icon/w-33.png",
+        "pic": "https://i.ibb.co/nLtZSVW/w-33.png",
         "title": "Pure Reliability",
         "text": "When node providers stop working, so do the wallets that use them. BlockWallet quickly switches to a backup node provider if the primary stops working, so your transactions can continue smoothly."
     }
