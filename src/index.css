@@ -9,3 +9,11 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+
+.bg-blur {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  filter: blur(130px);
+  background: #714EFF;
+}

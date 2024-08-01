@@ -1,0 +1,17 @@
+.footerItem{
+    border: 1px solid #fff7;
+    border-bottom:  none;
+    position: relative;
+    z-index: 2;
+}
+.footerItem::after{
+    content: '';
+    height: 40%;
+    width: 101%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(transparent, #6346CB 70%);
+    z-index:-1;
+}

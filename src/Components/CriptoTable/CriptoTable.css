@@ -1,0 +1,62 @@
+.table-content {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.table-content th, .table-content td {
+    padding: 0 10px;
+    text-align: start;
+    /* border: 1px solid; */
+}
+
+.top-table-data{
+    background: #fff2;
+    display: block;
+    height: 100%;
+    border: 1px solid #fff5;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    font-size: 20px;
+}
+.table-data{
+    background: #fff2;
+    display: block;
+    height: 100%;
+    border-bottom: 1px solid #fff5;
+    border-left: 1px solid #fff5;
+    border-right: 1px solid #fff5;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+.bottom-table-data{
+    background: #fff2;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #fff5;
+    border-left: 1px solid #fff5;
+    border-right: 1px solid #fff5;
+}
+
+.feature-name {
+    text-align: start;
+    padding: 0  10px ;
+    border: 1px solid #0000;
+}
+
+.feature-name span {
+    border-bottom: 1px solid #fff5;
+    background: none;
+    width: 100%;
+    padding: 15px;
+    display: block;
+    color: #fff7;
+}
